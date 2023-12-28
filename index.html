@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+        <div class="logo">
+             <a href="#" onclick="reload()" class="news-logo">
+                <img src="../download.png" alt="news logo">
+              </a>
+          <div class="nav-link"></div>
+                  <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')"><b>IPL</b></li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')"><b>FINANCE</b></li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')"><b>Politics</b></li>
+                  </ul>
+          </div>
+                 <div class="search-bar ">
+             <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+             <button id="search-button"  class="search-button">Search</button>
+                 </div>
+        </div>                                                      
+     </nav>
+
+   
+
+     <main> 
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>      
+     </main> 
+     
+     <template id="template-news-card">
+         <div class="card">
+            <div class="card-header">
+                    <img src="https://placeholder.com/400" alt="news-img" id="news-img">
+            </div>
+                <div class="card-content">
+                 <h3 id="news-title">This is The Title</h3>
+                 <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                 <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sit dolorem quo culpa ad aliquid quasi totam maxime ipsum praesentium, cumque at aut voluptatem! Ea omnis beatae labore illum qui?</p>
+                 </div>  
+         </div> 
+      </template>       
+             
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ebe1e1;
+    color: rgb(7, 6, 6);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.news-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.news-input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #95acf8;
+    color: white;
+    border: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1180px;
+    overflow: hidden;
+    color: #252424;
+}
+
+.card {
+    border: 1px solid #494646;
+    padding: 10px;
+    width: 350px;
+    background-color: #7db8e7;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #4289be;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    color: #0f0f0f;
+    margin-block: 12px;
+}
+
+.news-desc {
+    color: #0d0d0e;
+}
+
+/* Add your own styling for hover effects, active states, etc. */
+.hover-link:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.hover-link:hover {
+    color: #444044;
+}
+
+.nav-item.active {
+    color: #2b98ec;
+    
+}
+
+.hover-link:active {
+         color:rgb(54, 5, 100);
+}
+
+.search-button:hover{
+    background-color:blue;
+}
